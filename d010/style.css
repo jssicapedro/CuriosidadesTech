@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family: Idroid;
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque:'Bebas Neue', cursive;
+    --font-android: 'Idroid', cursive;
+}
+
+*{
+     margin: 0px;
+     padding: 0px;
+     text-align: justify;
+     margin: auto;
+}
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--font-padrao);
+}
+
+header{
+    color: white;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    margin: 0%;
+    min-height: 150px;
+    padding-top: 40px;
+}
+
+header > h1{
+    font-family: var(--font-destaque);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.26);
+}
+
+header > p{
+    text-align: center;
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    paddin-bottom:30px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.363);
+}
+
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.192);
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    padding: 11px;
+    font-weight: bold;
+    border-radius: 5px 5px 0px 0px;
+}
+
+nav > a:hover{
+    background-color: var(--cor2);
+    color: var(--cor5);
+    transition-duration: .5s; /*Define a duração da animação*/
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 4px -2px 16px rgba(0, 0, 0, 0.37);
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 30px;
+}
+
+main h1{
+    color: var(--cor5);
+    font-family: var(--font-android);
+}
+
+main h2{
+    font-family: var(--font-android);
+    color: var(--cor4);
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 10px;
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.3em;
+    font-size: 1em;
+}
+
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+main a {
+    background-color: var(--cor1);
+    color: var(--cor5);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main a:after{
+    content: "\1F517";
+}
+
+main img{
+    width: 100%;
+    margin: auto;
+}
+
+main img.pequenabugdroid{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+article{
+    padding: 14px;
+}
+
+div.video{
+    position: relative;
+    background-color: var(--cor4);
+    height: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+}
+
+.video:hover{
+    background-color: var(--cor3);
+    transition-duration: .5s;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: var(--cor1);
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+aside h3{
+    background-color: var(--cor3);
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    padding: 10px;
+    text-indent: 20px;
+}
+
+aside p{
+    padding: 0px 10px;
+}
+
+aside ul{
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+    padding: 0px 50px;
+}
+
+aside a:after{
+    content: "\1F517";
+}
+
+footer{
+    min-height: 40px;
+    background-color: var(--cor5);
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer > p{
+    text-align: center;
+    padding: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline overline; /*Cria linha em cima e em baixo do texto*/
+}
